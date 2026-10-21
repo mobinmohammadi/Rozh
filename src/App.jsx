@@ -88,7 +88,7 @@ const HeroSection = () => {
         {/* تصویر */}
         <div className="w-full md:w-1/2 pb-5 object-contain flex justify-center">
           <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-blue-200 rounded-full flex items-center justify-center text-blue-500 shadow-lg">
-            <img className='rounded-full ring-5 bg-sky-700' src="./../public/images/admin1.jpg" alt="" />
+            <img className='rounded-full ring-5 bg-sky-700' src="/images/admin1.jpg" alt="" />
           </div>
         </div>
       </div>
