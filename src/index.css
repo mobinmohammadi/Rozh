@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Dana";
+    src: url("./../src/assets/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+  --font-Dana: "Dana", Dana-serif;
+}
