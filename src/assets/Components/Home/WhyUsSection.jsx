@@ -76,7 +76,7 @@ export default function WhyUsSection() {
                             
                             <a href="tel:021-36798712" className="flex items-center justify-center gap-2 rounded-xl border border-gray-300 bg-white px-6 py-3 text-xs font-bold text-gray-700 transition hover:border-blue-600 hover:text-blue-600">
                                 <PhoneIcon />
-                                ۰۲۱-۳۶۷۹۸۷۱۲
+                                09391177395
                             </a>
                         </div>
                     </div>
