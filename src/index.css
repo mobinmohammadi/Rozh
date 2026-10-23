@@ -12,3 +12,28 @@
 @theme {
   --font-Dana: "Dana", sans-serif;
 }
+
+
+
+ @keyframes float {
+                    0%, 100% { transform: translateY(0px); }
+                    50% { transform: translateY(-15px); }
+                }
+                @keyframes colorGlow {
+                    0% {
+                        box-shadow: 0 0 20px 5px rgba(59, 130, 246, 0.3);
+                        border-color: rgba(59, 130, 246, 0.6);
+                    }
+                    33% {
+                        box-shadow: 0 0 20px 5px rgba(234, 179, 8, 0.3);
+                        border-color: rgba(234, 179, 8, 0.6);
+                    }
+                    66% {
+                        box-shadow: 0 0 20px 5px rgba(168, 85, 247, 0.3);
+                        border-color: rgba(168, 85, 247, 0.6);
+                    }
+                    100% {
+                        box-shadow: 0 0 20px 5px rgba(59, 130, 246, 0.3);
+                        border-color: rgba(59, 130, 246, 0.6);
+                    }
+                }

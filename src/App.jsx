@@ -1,63 +1,10 @@
 import React, { useState } from 'react';
+import Header from './assets/Page/Header';
 
 // ==========================================
 // 1. هدر (Header) - ریسپانسیو با منوی موبایل
 // ==========================================
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  return (
-    <header className="w-full bg-white shadow-sm py-4 px-4 md:px-8 sticky top-0 z-50" dir="rtl">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        
-        {/* لوگو */}
-        <div className="text-2xl font-bold text-blue-600">LOGO</div>
-
-        {/* منوی دسکتاپ */}
-        <nav className="hidden md:flex items-center gap-6 text-gray-600 text-sm font-medium">
-          <a href="#" className="hover:text-blue-600 transition">صفحه اصلی</a>
-          <a href="#" className="hover:text-blue-600 transition">محصولات</a>
-          <a href="#" className="hover:text-blue-600 transition">درباره ما</a>
-          <a href="#" className="hover:text-blue-600 transition">تماس با ما</a>
-        </nav>
-
-        {/* دکمه ورود دسکتاپ */}
-        <div className="hidden md:block">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition text-sm">
-            ورود / ثبت نام
-          </button>
-        </div>
-
-        {/* دکمه منوی موبایل */}
-        <button 
-          className="md:hidden text-gray-600 focus:outline-none"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
-
-      {/* منوی بازشونده موبایل */}
-      {isMenuOpen && (
-        <div className="md:hidden mt-4 pt-4 border-t border-gray-100 flex flex-col gap-4 text-gray-600 text-sm font-medium">
-          <a href="#" className="hover:text-blue-600">صفحه اصلی</a>
-          <a href="#" className="hover:text-blue-600">محصولات</a>
-          <a href="#" className="hover:text-blue-600">درباره ما</a>
-          <a href="#" className="hover:text-blue-600">تماس با ما</a>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition w-full mt-2">
-            ورود / ثبت نام
-          </button>
-        </div>
-      )}
-    </header>
-  );
-};
 
 // ==========================================
 // 2. بخش قهرمان (Hero Section)
