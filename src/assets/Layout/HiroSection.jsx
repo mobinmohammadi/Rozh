@@ -273,7 +273,9 @@ function BrandsSection() {
     );
 }
 
-export default function HeroSection() {
+
+
+export default function HiroSection() {
     return (
         <main dir="rtl" className="min-h-screen bg-white text-gray-800">
             <div className="mx-auto max-w-[1440px]">
