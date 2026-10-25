@@ -1,0 +1,88 @@
+export const portfolioData = [
+  {
+    id: 1,
+    title: "طراحی سایت فروشگاهی",
+    category: "فروشگاهی",
+    client: "سایت مکمل فروشی سم سون",
+    cover: { src: "/images/3-1.PNG", alt: "صفحه اصلی فروشگاه مکمل سم سون" },
+    images: [
+      { src: "/images/portfolio/store-samson/3-2.PNG", alt: "صفحه محصول فروشگاه" },
+      { src: "/images/portfolio/store-samson/3-3.PNG", alt: "سبد خرید و پرداخت" },
+      { src: "/images/portfolio/store-samson/3-4.PNG", alt: "پنل مدیریت سفارشات" },
+      { src: "/images/portfolio/store-samson/3-5.PNG", alt: "صفحه دسته‌بندی محصولات" },
+    ],
+  },
+  {
+    id: 2,
+    title: "طراحی سایت شرکتی",
+    category: "شرکتی",
+    client: "سایت رزرو دکتر حقی",
+    cover: { src: "/images/portfolio/clinic-haghi/cover.PNG", alt: "صفحه اصلی سایت دکتر حقی" },
+    images: [
+      { src: "/images/portfolio/clinic-haghi/1.PNG", alt: "فرم نوبت‌دهی آنلاین" },
+      { src: "/images/portfolio/clinic-haghi/2.PNG", alt: "پروفایل بیمار" },
+      { src: "/images/portfolio/clinic-haghi/3.PNG", alt: "بخش مقالات پزشکی" },
+    ],
+  },
+    {
+    id: 3,
+    title: "طراحی سایت فروشگاهی",
+    category: "فروشگاه لباس",
+    client: "مهندس محمدی",
+    cover: { src: "/images/5-1.PNG", alt: "صفحه اصلی سایت شخصی مهندس محمدی" },
+    images: [
+      { src: "/images/5.2.jpg", alt: "بخش نمونه‌کارها" },
+      { src: "/images/5.3.jpg", alt: "بخش بلاگ" },
+      { src: "/images/5.4.jpg", alt: "فرم تماس" },
+    ],
+  },
+  {
+    id: 4,
+    title: "طراحی وب اپلیکیشن",
+    category: "وب اپلیکیشن",
+    client: "سایت سفارش غذا مشابه رازینه",
+    cover: { src: "/images/portfolio/food-app/cover.PNG", alt: "صفحه اصلی اپلیکیشن سفارش غذا" },
+    images: [
+      { src: "/images/portfolio/food-app/1.PNG", alt: "منوی غذاها" },
+      { src: "/images/portfolio/food-app/2.PNG", alt: "سبد خرید" },
+      { src: "/images/portfolio/food-app/3.PNG", alt: "پیگیری سفارش" },
+      { src: "/images/portfolio/food-app/4.PNG", alt: "پنل رستوران" },
+    ],
+  },
+  {
+    id: 4,
+    title: "طراحی سایت فروشگاهی",
+    category: "فروشگاه لباس",
+    client: "مهندس محمدی",
+    cover: { src: "/images/5-1.PNG", alt: "صفحه اصلی سایت شخصی مهندس محمدی" },
+    images: [
+      { src: "/images/5.2.jpg", alt: "بخش نمونه‌کارها" },
+      { src: "/images/5.3.jpg", alt: "بخش بلاگ" },
+      { src: "/images/5.4.jpg", alt: "فرم تماس" },
+    ],
+  },
+  {
+    id: 5,
+    title: "طراحی فروشگاه لوازم خانگی",
+    category: "فروشگاهی",
+    client: "فروشگاه لوازم خانگی رضایی",
+    cover: { src: "/images/portfolio/home-appliances/cover.jpg", alt: "صفحه اصلی فروشگاه لوازم خانگی رضایی" },
+    images: [
+      { src: "/images/portfolio/home-appliances/1.jpg", alt: "دسته‌بندی محصولات" },
+      { src: "/images/portfolio/home-appliances/2.jpg", alt: "مقایسه محصولات" },
+      { src: "/images/portfolio/home-appliances/3.jpg", alt: "استعلام قیمت" },
+    ],
+  },
+  {
+    id: 6,
+    title: "طراحی سایت کلینیک زیبایی",
+    category: "شرکتی",
+    client: "کلینیک زیبایی احمدی",
+    cover: { src: "/images/portfolio/beauty-clinic/cover.jpg", alt: "صفحه اصلی کلینیک زیبایی احمدی" },
+    images: [
+      { src: "/images/portfolio/beauty-clinic/1.jpg", alt: "گالری قبل و بعد" },
+      { src: "/images/portfolio/beauty-clinic/2.jpg", alt: "رزرو مشاوره" },
+      { src: "/images/portfolio/beauty-clinic/3.jpg", alt: "نظرسنجی مراجعین" },
+    ],
+  },
+];
