@@ -259,7 +259,7 @@ export default function MainLayout () {
                             </Link>
 
                             <Link
-                                to="#"
+                                to="/contact-us"
                                 className="inline-flex w-full sm:w-auto min-h-10 items-center justify-center gap-2 rounded-md bg-blue-600 px-4 py-3 text-[10px] font-bold text-white shadow-sm transition hover:bg-blue-700 sm:text-xs"
                             >
                                 <span>مشاوره میخوام</span>

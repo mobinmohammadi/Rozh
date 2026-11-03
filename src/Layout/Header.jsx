@@ -1,4 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
+import {  Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -8,10 +9,10 @@ export default function Header() {
             <div className="mx-auto flex h-[52px] max-w-[1200px] items-center justify-between px-4 sm:px-6 lg:px-10">
           
                 <nav className="hidden items-center gap-6 text-[11px] text-gray-600 md:flex">
-                    <a href="#home" className="transition hover:text-blue-600">صفحه اصلی</a>
-                    <a href="#services" className="transition hover:text-blue-600">خدمات</a>
-                    <a href="#about" className="transition hover:text-blue-600">درباره ما</a>
-                    <a href="#contact" className="transition hover:text-blue-600">تماس با ما</a>
+                    <Link href="#home" className="transition hover:text-blue-600">صفحه اصلی</Link>
+                    <Link href="#services" className="transition hover:text-blue-600">خدمات</Link>
+                    <Link href="#about" className="transition hover:text-blue-600">درباره ما</Link>
+                    <Link to="/contact-us" href="#contact" className="transition hover:text-blue-600">تماس با ما</Link>
                 </nav>
 
                 {/* اقدامات هدر */}
@@ -20,9 +21,9 @@ export default function Header() {
                         ⌕
                     </button>
 
-                    <button className="rounded-md bg-yellow-400 px-3 py-2 text-[10px] font-bold text-gray-900 transition hover:bg-yellow-300 sm:px-5">
+                    <Link to="/contact-us" className="rounded-md bg-yellow-400 px-3 py-2 text-[10px] font-bold text-gray-900 transition hover:bg-yellow-300 sm:px-5">
                         ثبت درخواست
-                    </button>
+                    </Link>
 
                     {/* منوی موبایل */}
                     <details className="relative md:hidden">
@@ -57,6 +58,7 @@ export default function Header() {
                 <div className="pointer-events-none absolute -bottom-[13px] left-1/2 hidden h-[26px] w-32 -translate-x-1/2 rounded-b-[50%] bg-white md:block" />
             </div>
         </header>
+        
 
         <Outlet/>
         </>
