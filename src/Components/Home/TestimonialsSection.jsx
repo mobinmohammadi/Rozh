@@ -133,10 +133,10 @@ export default function TestimonialsSection() {
                             modules={[Navigation, Pagination, Autoplay]}
                             spaceBetween={24}
                             slidesPerView={1}
-                            navigation
-                            pagination={{ clickable: true }}
+                            // navigation
+                            // pagination={{ clickable: true }}
                             autoplay={{
-                                delay: 1500,
+                                delay: 3000,
                                 disableOnInteraction: false,
                             }}
                             loop={true}
