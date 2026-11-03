@@ -10,6 +10,7 @@ import MainLayout from "../Layout/MainLayout";
 import HiroSection from "../Layout/MainLayout";
 import Loader from "../utils/Loader";
 import TeamSection from "../shairedcomponent/TeamSection";
+import ContactBanner from "../shairedcomponent/ContactBanner";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +28,7 @@ const Home = () => {
       <ProcessSection />
       <PortfolioSection />
       <PricingSection />
+      <ContactBanner/>
       <TeamSection/>
       <FAQSection />
 
