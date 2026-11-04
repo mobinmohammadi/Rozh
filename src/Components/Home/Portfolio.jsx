@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // آیکون فلش گوشه باکس‌ها
 const ArrowUpLeftIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4">
@@ -10,7 +12,8 @@ const portfolioItems = [
         // کارت اول: سایت خودرو (راست در تصویر)
         title: "سایت آسان مالیات",
         description: "با آسان مالیات همراه باشید و مالیات خود را به ساده‌ترین شکل ممکن پرداخت کنید.",
-        image: "./images/1.png"
+        image: "./images/1.png",
+        link : "/portfolio/1",
         // اگر لوکال داری از آدرس زیر استفاده کن:
         // image: "/images/car-site.jpg",
     },
@@ -18,13 +21,15 @@ const portfolioItems = [
         // کارت دوم: سایت سازه (وسط در تصویر)
         title: "سایت آسان مالیات",
         description: "با آسان مالیات همراه باشید و مالیات خود را به ساده‌ترین شکل ممکن پرداخت کنید.",
-        image: "./images/1.png"
+        image: "./images/1.png",
+        link : "/portfolio/1",
         // اگر لوکال داری از آدرس زیر استفاده کن:
         // image: "/images/structure-site.jpg",
     },
     {
         // کارت سوم: سایت شخصی (چپ در تصویر)
         title: "سایت آسان مالیات",
+        link : "/portfolio/1",
         description: "با آسان مالیات همراه باشید و مالیات خود را به ساده‌ترین شکل ممکن پرداخت کنید.",
         image: "./images/1.png"
     }
@@ -44,7 +49,7 @@ function PortfolioSection() {
 
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {portfolioItems.map((item, index) => (
-                        <div 
+                        <Link to="/portfolio/1" 
                             key={index} 
                             className="group relative flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                         >
@@ -73,7 +78,7 @@ function PortfolioSection() {
                                     <div className="absolute inset-0 bg-blue-900/0 transition-colors duration-300 group-hover:bg-blue-900/10"></div>
                                 </div>
                             </div>
-                        </div>
+                        </Link >
                     ))}
                 </div>
             </div>
