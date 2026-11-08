@@ -12,9 +12,9 @@
 @theme {
   --font-Dana: "Dana", sans-serif;
     --animate-fadeInUp: fadeInUp 0.6s ease-out both;
-
+}
   /* 2. تعریف keyframes داخل @theme */
-  @keyframes fadeInUp {
+  /* @keyframes fadeInUp {
     0% {
       opacity: 0;
       transform: translateY(20px);
@@ -49,4 +49,24 @@
                         box-shadow: 0 0 20px 5px rgba(59, 130, 246, 0.3);
                         border-color: rgba(59, 130, 246, 0.6);
                     }
-                }
+                } */
+
+
+                @keyframes colorGlow {
+  0%, 100% { border-color: rgba(59, 130, 246, 0.35); box-shadow: 0 0 24px rgba(59, 130, 246, 0.12); }
+  50%      { border-color: rgba(250, 204, 21, 0.55); box-shadow: 0 0 28px rgba(250, 204, 21, 0.18); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+.hero-glow      { animation: colorGlow 4s linear infinite; }
+.hero-float     { animation: float 3s   ease-in-out infinite; }
+.hero-float-alt { animation: float 4s   ease-in-out infinite 1s; }
+.hero-float-fast{ animation: float 3.5s ease-in-out infinite .5s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-glow, .hero-float, .hero-float-alt, .hero-float-fast { animation: none; }
+}
