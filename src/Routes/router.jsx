@@ -4,6 +4,8 @@ import Portfolio from "../pages/Portfolio";
 import Header from "../Layout/Header";
 import SinglePage from "../pages/SinglePage";
 import ContactUs from "../pages/ContactUs";
+import Articles from "../pages/Articles";
+import ArticleDetails from "../pages/ArticleDetails";
 
  const router = createBrowserRouter([
     {
@@ -24,8 +26,14 @@ import ContactUs from "../pages/ContactUs";
             },
              {
                 path : '/contact-us', element : <ContactUs/>
-            }
-        ]
+            },
+             {
+                path : '/articles', element : <Articles/>
+            },
+              {
+                path : '/articles/:articleId', element : <ArticleDetails/>
+            },
+        ],
     }
 ])
 
