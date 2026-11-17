@@ -9,8 +9,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Morabba";
+  src: url("./../public/fonts/Morabba/woff2/Morabba-Medium.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 @theme {
   --font-Dana: "Dana", sans-serif;
+  --font-Dana: "Morabba", sans-serif;
     --animate-fadeInUp: fadeInUp 0.6s ease-out both;
 }
   /* 2. تعریف keyframes داخل @theme */
